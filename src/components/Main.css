@@ -1,0 +1,18 @@
+.movie {
+    background-color: rgba(0, 255, 255, 0.349);
+}
+
+.movie-container {
+    position: relative;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px #000000;
+    background-color: rgba(255, 255, 255, 0.925);
+    margin: 15px;
+    width: 50%;
+    left: 30%;
+}
+
+h3 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
