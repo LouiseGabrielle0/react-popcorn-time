@@ -14,10 +14,10 @@ function Main(props) {
 
  
 
-     {props.listOfMovies.map((movie) => {
+     {props.listOfMovies.map((movie, index) => {
       return (
           <Movies 
-                key={movie.id} 
+                key={index} 
                 title={movie.title} 
                 year={movie.year} 
                 imgURL={movie.imgURL} 

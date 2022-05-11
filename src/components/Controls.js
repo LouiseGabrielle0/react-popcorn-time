@@ -1,4 +1,5 @@
 function Controls(props) {
+    
   let moviesList = [...props.listOfMovies];
 
   const filterTopRated = () => {
