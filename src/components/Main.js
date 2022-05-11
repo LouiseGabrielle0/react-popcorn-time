@@ -2,8 +2,10 @@ import './Main.css'
 import Movies from "./Movies"
 
 
+
 function Main(props) {
 
+  
   
 
 
@@ -23,6 +25,9 @@ function Main(props) {
                 imgURL={movie.imgURL} 
                 alt={movie.title} 
                 rating={movie.rating}
+                movies={props.listOfMovies}
+                setMovies={props.setMovies}
+                id={movie.id}
       />
       )
       })}

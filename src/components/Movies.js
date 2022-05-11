@@ -1,4 +1,14 @@
 function Movies(props) {
+
+
+  
+  const deleteMovie =(id) => {
+    let allMovies = JSON.parse(JSON.stringify(props.movies))
+    console.log(id)
+    console.log(allMovies)
+    props.setMovies(allMovies.filter((movie) => movie.id !== id))
+    console.log(allMovies)
+  }
           return (
         <section className="movie">
               <div key={props.id}>
@@ -11,6 +21,7 @@ function Movies(props) {
                 Rating: {props.rating} {" "}
                 {props.rating >= 7 && <span>RECOMMENDED</span>}
                 </h5>  
+                <button onClick={() => deleteMovie(props.id)}>Delete</button>
         </section>
         </div>
       </section>
